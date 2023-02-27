@@ -2,7 +2,7 @@ import { BelongsToMany, Column, DataType, HasMany, Model, Table } from "sequeliz
 import { ApiProperty } from "@nestjs/swagger";
 import { Role } from "../roles/roles.model";
 import { UserRoles } from "../roles/user-roles.model";
-import { Post } from "../posts/posts.model";
+import { CurrentPost } from "../posts/posts.model";
 
 
 interface UserCreationAttrs {
@@ -37,6 +37,6 @@ export class User extends Model<User, UserCreationAttrs> {
   @BelongsToMany(() => Role, () => UserRoles)
   roles: Role[];
 
-  @HasMany(()=>Post)
-  posts:Post[]
+  @HasMany(()=>CurrentPost)
+  posts:CurrentPost[]
 }

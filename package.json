@@ -29,6 +29,7 @@
     "@nestjs/sequelize": "^9.0.0",
     "@nestjs/swagger": "^6.2.1",
     "@types/sequelize": "^4.28.14",
+    "@types/uuid": "^9.0.1",
     "@types/validator": "^13.7.12",
     "bcryptjs": "^2.4.3",
     "class-transformer": "^0.5.1",
@@ -42,7 +43,8 @@
     "sequelize": "^6.28.1",
     "sequelize-typescript": "^2.1.5",
     "swagger-ui-express": "^4.6.1",
-    "typeorm": "^0.3.12"
+    "typeorm": "^0.3.12",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",

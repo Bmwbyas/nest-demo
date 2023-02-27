@@ -5,10 +5,12 @@ import { User } from "../users/users.model";
 interface PostCreationAttrs {
   title: string;
   content: string;
+  userId:number;
+  image:string;
 }
 
 @Table({ tableName: "posts" })
-export class Post extends Model<Post, PostCreationAttrs> {
+export class CurrentPost extends Model<CurrentPost, PostCreationAttrs> {
 
   @Column({ type: DataType.INTEGER, unique: true, autoIncrement: true, primaryKey: true })
   id: number;
